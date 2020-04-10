@@ -19,7 +19,6 @@
 		70F1031D243F6569000229DF /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1031C243F6569000229DF /* Rating.swift */; };
 		70F1031F243F658B000229DF /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F1031E243F658B000229DF /* History.swift */; };
 		70F10321243F65C5000229DF /* SourceofTruth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F10320243F65C5000229DF /* SourceofTruth.swift */; };
-		70F10323243F65FC000229DF /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F10322243F65FC000229DF /* EditView.swift */; };
 		70F10327243F6CA7000229DF /* History_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F10326243F6CA7000229DF /* History_view.swift */; };
 		70F1032A243F7911000229DF /* Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70F10328243F7911000229DF /* Assignment.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -60,7 +59,6 @@
 		70F1031C243F6569000229DF /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		70F1031E243F658B000229DF /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		70F10320243F65C5000229DF /* SourceofTruth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceofTruth.swift; sourceTree = "<group>"; };
-		70F10322243F65FC000229DF /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		70F10326243F6CA7000229DF /* History_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History_view.swift; sourceTree = "<group>"; };
 		70F10329243F7911000229DF /* Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +119,6 @@
 				70F1031A243F654E000229DF /* Set_rating_range.swift */,
 				70F1031C243F6569000229DF /* Rating.swift */,
 				70F1031E243F658B000229DF /* History.swift */,
-				70F10322243F65FC000229DF /* EditView.swift */,
 				70F10326243F6CA7000229DF /* History_view.swift */,
 				70F102F0243F6515000229DF /* Assets.xcassets */,
 				70F102F5243F6515000229DF /* LaunchScreen.storyboard */,
@@ -292,7 +289,6 @@
 				70F1031B243F654F000229DF /* Set_rating_range.swift in Sources */,
 				70F1031F243F658B000229DF /* History.swift in Sources */,
 				70F10321243F65C5000229DF /* SourceofTruth.swift in Sources */,
-				70F10323243F65FC000229DF /* EditView.swift in Sources */,
 				70F102E8243F6511000229DF /* AppDelegate.swift in Sources */,
 				70F1032A243F7911000229DF /* Assignment.xcdatamodeld in Sources */,
 				70F102EF243F6511000229DF /* ContentView.swift in Sources */,

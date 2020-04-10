@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import UIKit
 
 var minimumvalue = 0.0
  var maximumvalue = 9.0
@@ -15,7 +15,8 @@ var minimumvalue = 0.0
 struct Rating: View {
     
 @State var tag:Int? = nil
-  @State var sliderValue = 0.0
+@State var sliderValue = 0.0
+@State var sliderValue_2 = 0.0
     let date = Date()
 
   
@@ -48,9 +49,10 @@ struct Rating: View {
                 }, set: { (newVal) in
                     self.sliderValue = newVal
                     self.tag=1
-                }), in: minimumvalue...maximumvalue,step:1).accentColor(Color.green)
+                }), in: minimumvalue...maximumvalue,step:1)
+                    .overlay(RoundedRectangle(cornerRadius: 25).stroke(lineWidth: 2).foregroundColor(Color.black))
+                    .accentColor(Color.green)
                     .onTapGesture(){self.tag=1}
-                    
                  Image(systemName:"star.lefthalf.fill")
                 }
                 VStack{
@@ -67,10 +69,11 @@ struct Rating: View {
                 
                 }
             Button(action: {
-                
+                self.sliderValue_2 = self.sliderValue
+                self.sliderValue = Double(self.truth.min_n)
                 let historyview = History_view(context: self.managedObjectContext)
                                                 historyview.id = UUID()
-                                               historyview.rating = self.sliderValue
+                                               historyview.rating = self.sliderValue_2
                                                historyview.dates = self.date
                                                
                                                do {

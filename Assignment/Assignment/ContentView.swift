@@ -28,6 +28,7 @@ struct ContentView: View {
         NavigationView{
         ZStack {
             
+
             NavigationLink(destination: Rating(),tag: 1, selection: $truth.viewtag){
                         EmptyView()
             }
@@ -104,8 +105,8 @@ struct ContentView: View {
                                   )
             }
 
-        }.padding()
-        
+            }.frame(width: UIScreen.main.bounds.width)
+        .padding()
         }
         
     }.onAppear(){

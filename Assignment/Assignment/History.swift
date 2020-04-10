@@ -17,18 +17,12 @@ struct History: View {
         formatter.dateFormat = "HH:mm E, d MMM y"
            return formatter
        }()
-//     @FetchRequest(fetchRequest: History_view.allIdeasFetchRequest()) var historyview: FetchedResults<History_view>
     @FetchRequest(entity: History_view.entity(), sortDescriptors: []) var historyview: FetchedResults<History_view>
     var body: some View {
         NavigationView{
                ZStack{
                 Color.init(red: 224/255, green: 80/255 , blue: 78/255)
-//                Color(red: 224/255, green: 80/255 , blue: 78/255)
-                
-//                          LinearGradient(gradient: Gradient(colors:  [Color("aubergine_l"), Color("aubergine_r")]), startPoint: .top, endPoint:.bottom)
-                                       .edgesIgnoringSafeArea(.all)
-     
-                
+                .edgesIgnoringSafeArea(.all)
                 VStack( alignment:.center,spacing:10){
                     HStack(spacing:10){
                         Image(systemName: "star.fill")
@@ -37,20 +31,15 @@ struct History: View {
                         Image(systemName: "star")
                         Image(systemName: "star")
                     }
-                              Text("Past Rating").font(.largeTitle)
-                    //                    Spacer()
+                    Text("Past Rating").font(.largeTitle)
                    List{
-//                Section(header: Text("Past Ratings")) {
                     ForEach(historyview,id:\.id) { historY in
-//                        NavigationLink(destination: EditView(history: historY)) {
                             VStack(alignment:.leading) {
                                 Text("Rating:\(Int(historY.rating))")
                                     .font(.headline)
-                               
                                 Text("Date:\(historY.dates!, formatter: Self.taskDateFormat) ")
                                     .font(.subheadline)
                             }
-//                        }
                     }
                     .onDelete { (indexSet) in
                         let historyToDelete = self.historyview[indexSet.first!]
@@ -65,7 +54,7 @@ struct History: View {
 
                 .font(.headline)
                     }.colorMultiply(Color(red: 224/255, green: 80/255 , blue: 78/255))
-                }
+                }.frame(width: UIScreen.main.bounds.width)
             }
         }
         .navigationBarBackButtonHidden(true)

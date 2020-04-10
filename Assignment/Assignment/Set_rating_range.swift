@@ -31,11 +31,11 @@ struct Set_rating_range: View {
     @State var mini: String = ""
     @State var maxi: String = ""
      @EnvironmentObject var truth:SourceOfTruth
-
     @State var tag:Int? = nil
-  @State var text = ""
+    @State var text = ""
     
     var body: some View {
+        
         let binding = Binding<String>(get:{self.mini},set:{self.mini = $0
               self.tag = 2
         })
@@ -125,7 +125,7 @@ struct Set_rating_range: View {
                   
    
    
-    }
+    }.frame(width: UIScreen.main.bounds.width)
         }
         
    
