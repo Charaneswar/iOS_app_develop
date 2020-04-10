@@ -1,1 +1,2 @@
-# iOS_app_develop
+# User Rating APP
+![](images/app_preview.png)
