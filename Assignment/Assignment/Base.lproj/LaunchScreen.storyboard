@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOk-Ln-e88">
+                                <rect key="frame" x="146" y="421.5" width="218.5" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" name="Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="P0f-jb-7kS">
+                                <rect key="frame" x="47" y="402" width="80" height="92"/>
+                                <color key="tintColor" name="Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Hv9-oh-c5A"/>
+                                    <constraint firstAttribute="width" secondItem="P0f-jb-7kS" secondAttribute="height" multiplier="80:93" id="IRo-QS-A5e"/>
+                                    <constraint firstAttribute="height" constant="93" id="s6I-Wm-2tV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="egQ-xh-HAi">
+                                <rect key="frame" x="76" y="493" width="22" height="20"/>
+                                <color key="tintColor" name="Color"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lIe-Wy-LoV">
+                                <rect key="frame" x="47" y="493" width="22" height="20"/>
+                                <color key="tintColor" name="Color"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TcB-C1-7h3">
+                                <rect key="frame" x="105" y="493" width="22" height="20"/>
+                                <color key="tintColor" name="Color"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="egQ-xh-HAi" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-120" id="04S-Le-M8u"/>
+                            <constraint firstItem="P0f-jb-7kS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-120" id="Azh-8t-cM4"/>
+                            <constraint firstItem="lIe-Wy-LoV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-149" id="Jkn-2K-3do"/>
+                            <constraint firstItem="rOk-Ln-e88" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="48.25" id="JlX-0n-naS"/>
+                            <constraint firstItem="lIe-Wy-LoV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="55" id="KTF-ov-70J"/>
+                            <constraint firstItem="TcB-C1-7h3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-91" id="QLe-ee-bEp"/>
+                            <constraint firstItem="egQ-xh-HAi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="55" id="csk-Xq-x5z"/>
+                            <constraint firstItem="rOk-Ln-e88" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nDu-X5-N1Q"/>
+                            <constraint firstItem="TcB-C1-7h3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="55" id="shG-BR-4uo"/>
+                            <constraint firstItem="P0f-jb-7kS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xoB-f0-6Qg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
+        <image name="star" catalog="system" width="64" height="58"/>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
