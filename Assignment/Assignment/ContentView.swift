@@ -111,7 +111,7 @@ struct ContentView: View {
         
     }.onAppear(){
     self.tag = 4
-    }
+    }.navigationViewStyle(StackNavigationViewStyle())
   }
    
 }

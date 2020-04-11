@@ -56,7 +56,7 @@ struct History: View {
                     }.colorMultiply(Color(red: 224/255, green: 80/255 , blue: 78/255))
                 }.frame(width: UIScreen.main.bounds.width)
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: MyBackButton_2(label: "Back") {
                self.truth.viewtag = 4
